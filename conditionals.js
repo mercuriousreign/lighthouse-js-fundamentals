@@ -1,6 +1,12 @@
 const raining = true;
 //const cold = false;
 const temperature = 12;
+const isCitizen = true;
+const age = 23;
+
+if (isCitizen && age > 18){
+  console.log("You are eligible to vote");
+}
 
 
 
@@ -9,6 +15,8 @@ if (raining) {
   console.log("Don't forget your umbrella!");
 }
 
+
+
 // if (cold) {
 //   console.log("Make sure you pick out a scarf!");
 // } else{
@@ -16,12 +24,19 @@ if (raining) {
 // }
 
 
-if (temperature < 0){
+if (temperature < - 40 || temperature > 40){
+  console.log("Maybe going outside isnt such a great idea")
+} else if( temperature < 0){
   console.log("Make sure you pick out a scarf!");
 } else if (temperature < 15){
   console.log("Make sure you pick out a scarf!");
-} else{
+} 
+else{
   console.log("Short sleeves are fine")
+}
+
+if (!raining){
+  console.log("Leave your umblrella at home!")
 }
 
 console.log("Now you're ready to go outside!");
